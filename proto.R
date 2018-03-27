@@ -17,3 +17,5 @@ ggraph(g) + geom_node_point(aes(color=name),size=10) +
                  end_cap = circle(4,'mm'),
                  start_cap = circle(4,'mm')) +
   geom_node_text(aes(label = name)) + ggthemes::theme_few()
+
+ggsave("./proto.png", width=5, height=5, dpi=100)
